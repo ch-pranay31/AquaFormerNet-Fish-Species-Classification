@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+venv/
+__MACOSX/
+.ipynb_checkpoints/
+.vscode/
+*.pyc
+.DS_Store
+fish_dataset/
+models/

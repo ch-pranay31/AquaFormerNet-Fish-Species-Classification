@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Fish Classification</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>🐟 AI Fish Classification System</h1>
+<p>Upload a fish image to detect species and view nutrition insights</p>
+
+</div>
+
+<div class="upload-card">
+
+<input type="file" id="imageInput">
+
+<button onclick="predictFish()">Analyze Fish</button>
+
+</div>
+
+<div class="result-card">
+
+<h2 id="result"></h2>
+
+<img id="preview"/>
+
+<div id="fishDetails"></div>
+
+<canvas id="nutritionChart"></canvas>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
